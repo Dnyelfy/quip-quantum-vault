@@ -1,0 +1,8 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: radial-gradient(1200px 600px at 70% -10%, #1d1b4b 0%, #0a0b16 55%) #0a0b16;
+  color: #e7e9f5;
+  min-height: 100vh;
+}

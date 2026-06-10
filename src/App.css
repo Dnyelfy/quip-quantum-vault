@@ -1,0 +1,282 @@
+.app {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 24px 16px 60px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 34px;
+  filter: drop-shadow(0 0 12px #7c6cff);
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0;
+  background: linear-gradient(90deg, #a78bfa, #60a5fa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.brand p {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #8b8fa3;
+}
+
+.acct {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #16182a;
+  border: 1px solid #2a2d45;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 13px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 8px #34d399;
+}
+
+.chain {
+  background: #1d2240;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 11px;
+  color: #93c5fd;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.stat {
+  background: #14162a;
+  border: 1px solid #262a48;
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+
+.stat span {
+  display: block;
+  font-size: 11px;
+  color: #8b8fa3;
+  margin-bottom: 4px;
+}
+
+.stat b {
+  font-size: 17px;
+  color: #e7e9f5;
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.tab {
+  background: #14162a;
+  border: 1px solid #262a48;
+  color: #aab;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.tab.active {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: #fff;
+  border-color: transparent;
+}
+
+.busy {
+  background: #1b1e38;
+  border: 1px solid #3b3f6e;
+  color: #c4b5fd;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.card {
+  background: #121426;
+  border: 1px solid #23264a;
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 14px;
+}
+
+.card.hero {
+  text-align: center;
+  padding: 44px 24px;
+}
+
+.cardhead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 0 0 10px;
+  color: #e7e9f5;
+}
+
+.muted {
+  color: #8b8fa3;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  color: #8b8fa3;
+  margin: 12px 0 5px;
+}
+
+input,
+select {
+  width: 100%;
+  background: #0e1020;
+  border: 1px solid #2a2d4f;
+  color: #e7e9f5;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #6d5cf0;
+}
+
+button {
+  background: #1b1e38;
+  border: 1px solid #34386a;
+  color: #cdd0e6;
+  border-radius: 10px;
+  padding: 9px 16px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.primary {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  border: none;
+  color: #fff;
+  margin-top: 14px;
+}
+
+button.primary.big {
+  font-size: 15px;
+  padding: 12px 26px;
+}
+
+.vaults {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.vaults li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  background: #0e1020;
+  border: 1px solid #23264a;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.bal {
+  color: #a5f3c4;
+  font-weight: 600;
+}
+
+.vaults a,
+.log a,
+footer a {
+  color: #8ab4ff;
+  text-decoration: none;
+}
+
+.log {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+.log li {
+  padding: 7px 0;
+  border-bottom: 1px dashed #23264a;
+  color: #c8cbe0;
+}
+
+.log li.err {
+  color: #fda4af;
+}
+
+.how {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #c8cbe0;
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #6b7090;
+  margin-top: 26px;
+}
