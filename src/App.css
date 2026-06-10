@@ -280,3 +280,32 @@ footer {
   color: #6b7090;
   margin-top: 26px;
 }
+
+/* v2 additions */
+.headright { display: flex; align-items: center; gap: 10px; }
+.langs { display: flex; gap: 4px; }
+.lng {
+  padding: 5px 9px; font-size: 11px; border-radius: 8px;
+  background: #14162a; border: 1px solid #262a48; color: #8b8fa3;
+}
+.lng.on { background: #2a2d5a; color: #e7e9f5; border-color: #4f46e5; }
+
+.dash { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin: 8px 0 18px; }
+.ringwrap { text-align: center; }
+.ring { transition: stroke-dashoffset 1s ease; }
+.ringlabel { font-size: 11px; color: #8b8fa3; margin-top: 4px; }
+.dgrid { display: grid; grid-template-columns: repeat(2, minmax(120px, 1fr)); gap: 10px; flex: 1; }
+.dstat {
+  background: #0e1020; border: 1px solid #23264a; border-radius: 12px;
+  padding: 12px 14px; text-align: center;
+}
+.dstat b { display: block; font-size: 20px; color: #e7e9f5; }
+.dstat span { font-size: 11px; color: #8b8fa3; }
+
+.subh { font-size: 13px; color: #aab; margin: 4px 0 10px; }
+.bars { display: flex; flex-direction: column; gap: 8px; }
+.barrow { display: flex; align-items: center; gap: 10px; font-size: 12px; }
+.barlabel { width: 130px; color: #8b8fa3; }
+.bartrack { flex: 1; height: 8px; background: #0e1020; border-radius: 999px; overflow: hidden; }
+.barfill { height: 100%; border-radius: 999px; transition: width .8s ease; }
+.barnum { width: 24px; text-align: right; color: #cdd0e6; }
